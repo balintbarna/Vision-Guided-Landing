@@ -14,6 +14,10 @@
 # Generated files
 *.pyc
 *build/*
+*devel/*
+*log/*
 *.stamp
 *.cmake
 .catkin_tools
+*.swp
+.catkin

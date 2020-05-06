@@ -10,3 +10,9 @@
 *.synctex.gz
 *.bak
 *.pdf
+
+# Generated files
+*.pyc
+*build/*
+*.stamp
+*.cmake

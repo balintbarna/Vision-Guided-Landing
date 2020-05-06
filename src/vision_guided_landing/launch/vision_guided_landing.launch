@@ -20,23 +20,13 @@
 	<param name="calibrate_d_image_y" value="813.0" />
 	<param name="image_downscale_factor" value="2.0" />
 
-		<!-- captures images from the camera -->
-		<node pkg="markerlocator" name="markercapture" type="MarkerCaptureROS.py" output="screen">
-			<param name="markerimage_pub" value="/markerlocator/image_raw" />
-			<param name="camera_device" value="0" /> <!-- linux device number -->
-			<param name="camera_width" value="1920" /> <!-- pixels -->
-			<param name="camera_height" value="1080" /> <!-- pixels -->
-			<param name="update_rate" value="30" /> <!-- Hz -->
-			<param name="skip_images" value="8" /> <!-- images to skip for each published image-->
-		</node>
-
-        <!-- locate a marker of order 6 -->
+        <!-- locate a marker of order 4 -->
         <node pkg="markerlocator" name="markerlocator_4" type="MarkerLocatorROS.py" output="screen">
             <param name="markerimage_sub" value="/markerlocator/image_raw" />
             <param name="markerpose_pub" value="/markerlocator/markerpose_4" />
             <param name="marker_order" value="4" />
             <param name="marker_size" value="28" /> <!-- pixels -->
             <param name="show_image" value="True" />
-            <param name="print_debug_messages" value="True" />
+            <param name="print_debug_messages" value="False" />
         </node>
 </launch>

@@ -43,12 +43,12 @@ class CameraDriver:
 		self.location = MarkerPose(None, None, None, None, None)
 
 	def open_image_window(self):
-		cv2.namedWindow('filterdemo', cv2.cv.CV_WINDOW_AUTOSIZE)
+		cv2.namedWindow('filterdemo', cv2.WINDOW_AUTOSIZE)
 
 	def process_frame(self):
 		self.processed_frame = self.current_frame
 		frame_gray = self.current_frame
-		self.processed_frame = cv2.cvtColor(self.current_frame, cv2.cv.CV_GRAY2BGR)
+		self.processed_frame = cv2.cvtColor(self.current_frame, cv2.COLOR_GRAY2BGR)
 		
 		# Previous marker location is unknown, search in the entire image.
 		self.current_frame = self.tracker.locate_marker(frame_gray)

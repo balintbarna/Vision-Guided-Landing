@@ -20,9 +20,9 @@ from MarkerTracker import MarkerTracker
 # parameters
 print_debug_messages = False
 show_image = True
-list_of_markers_to_find = [4]
+list_of_markers_to_find = [4, 5]
 get_images_to_flush_cam_buffer = 5
-publish_to_ros = True
+publish_to_ros = False
 markerpose_ros_topic = '/markerlocator/markerpose'
 
 # global variables

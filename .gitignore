@@ -18,3 +18,4 @@
 *.cmake
 .catkin_tools
 *.swp
+.catkin

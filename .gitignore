@@ -16,3 +16,4 @@
 *build/*
 *.stamp
 *.cmake
+.catkin_tools

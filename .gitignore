@@ -17,3 +17,4 @@
 *.stamp
 *.cmake
 .catkin_tools
+*.swp

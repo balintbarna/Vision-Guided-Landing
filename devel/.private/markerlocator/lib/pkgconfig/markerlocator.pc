@@ -1,0 +1,8 @@
+prefix=/home/fn/Workspace/Uni/2RoboticsAndComputerVision/Project4/visionguidedlanding-group3/devel/.private/markerlocator
+
+Name: markerlocator
+Description: Description of markerlocator
+Version: 0.0.0
+Cflags: -I/home/fn/Workspace/Uni/2RoboticsAndComputerVision/Project4/visionguidedlanding-group3/devel/.private/markerlocator/include
+Libs: -L${prefix}/lib 
+Requires: 

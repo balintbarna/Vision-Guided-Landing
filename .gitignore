@@ -13,5 +13,6 @@
 
 # Generated files
 *.pyc
-build/*
-
+*build/*
+*.stamp
+*.cmake

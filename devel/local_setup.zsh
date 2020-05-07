@@ -1,1 +1,0 @@
-/home/fn/Workspace/Uni/2RoboticsAndComputerVision/Project4/visionguidedlanding-group3/devel/.private/catkin_tools_prebuild/local_setup.zsh

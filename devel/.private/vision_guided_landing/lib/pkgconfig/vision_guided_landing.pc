@@ -1,8 +1,0 @@
-prefix=/home/fn/Workspace/Uni/2RoboticsAndComputerVision/Project4/visionguidedlanding-group3/devel/.private/vision_guided_landing
-
-Name: vision_guided_landing
-Description: Description of vision_guided_landing
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

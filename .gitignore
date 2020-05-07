@@ -6,4 +6,6 @@ logs/*
 
 # Python
 *.pyc
+
+# VIM
 *.swp

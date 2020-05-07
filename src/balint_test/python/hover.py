@@ -16,6 +16,7 @@ class hover:
         rospy.loginfo("Sending waypoints...")
         for i in range(1,5):
             self.send_waypoint(0,0,i/2.0,i,0,0)
+            rospy.sleep(2)
 
     def unpause_gazebo(self):
         service_name = "/gazebo/unpause_physics"

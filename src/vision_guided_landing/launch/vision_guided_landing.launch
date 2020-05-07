@@ -18,6 +18,14 @@
 	<param name="calibrate_d_world_y" value="0.545" />
 	<param name="calibrate_d_image_x" value="1619.0" />
 	<param name="calibrate_d_image_y" value="813.0" />
+
+    <param name="calibrate_fx" value="448.1" />
+    <param name="calibrate_fy" value="448.1" />
+    <param name="calibrate_cx" value="376" />
+    <param name="calibrate_cy" value="240" />
+
+    <param name="aruco_length" value="1" />
+
 	<param name="image_downscale_factor" value="2.0" />
 
         <!-- locate a marker of order 4 -->

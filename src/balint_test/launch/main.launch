@@ -1,17 +1,18 @@
 <launch>
-  <arg name="mav_name" default="hummingbird"/>
-  <!-- The following line causes gzmsg and gzerr messages to be printed to the console
-      (even when Gazebo is started through roslaunch) -->
-  <arg name="verbose" default="false"/>
+    <arg name="mav_name" default="hummingbird"/>
+    <!-- The following line causes gzmsg and gzerr messages to be printed to the console
+        (even when Gazebo is started through roslaunch) -->
+    <arg name="verbose" default="false"/>
 
-  <include file="$(find balint_test)/launch/launch_sim.launch">
-  </include>
-
-  <group ns="$(arg mav_name)">
-    <include file="$(find balint_test)/launch/load_uav.launch">
-        <arg name="mav_name" value="$(arg mav_name)" />
+    <include file="$(find balint_test)/launch/launch_sim.launch">
     </include>
 
-    <node name="hovering_example" pkg="rotors_gazebo" type="hovering_example" output="screen"/>
-  </group>
+    <group ns="$(arg mav_name)">
+        <include file="$(find balint_test)/launch/load_uav.launch">
+            <arg name="mav_name" value="$(arg mav_name)" />
+        </include>
+
+        <node name="hovering_example" pkg="rotors_gazebo" type="hovering_example" output="screen"/>
+        <node pkg="balint_test" name="hovery" type="hovery.py" output="screen" />
+    </group>
 </launch>

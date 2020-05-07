@@ -12,7 +12,7 @@
             <arg name="mav_name" value="$(arg mav_name)" />
         </include>
 
-        <node name="hovering_example" pkg="rotors_gazebo" type="hovering_example" output="screen"/>
-        <node pkg="balint_test" name="hovery" type="hovery.py" output="screen" />
+        <!-- <node name="hovering_example" pkg="rotors_gazebo" type="hovering_example" output="screen"/> -->
+        <node pkg="balint_test" name="state_machine" type="hover.py" output="screen" />
     </group>
 </launch>

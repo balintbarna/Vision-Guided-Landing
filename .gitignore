@@ -7,3 +7,6 @@ logs/*
 # Python
 *.pyc
 *.swp
+
+# IDE
+.vscode/

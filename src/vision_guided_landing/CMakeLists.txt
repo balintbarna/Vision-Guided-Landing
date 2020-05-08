@@ -13,7 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   rotors_control
   rotors_gazebo
   robot_state_publisher
-  join_state_publisher)
+  joint_state_publisher)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 

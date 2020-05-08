@@ -51,10 +51,22 @@
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>markerlocator</build_depend>
   <build_depend>rospy</build_depend>
+  <build_depend>rotors_control</build_depend>
+  <build_depend>rotors_gazebo</build_depend>
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>join_state_publisher</build_depend>
   <build_export_depend>markerlocator</build_export_depend>
   <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>rotors_control</build_export_depend>
+  <build_export_depend>rotors_gazebo</build_export_depend>
+  <build_export_depend>robot_state_publisher</build_export_depend>
+  <build_export_depend>join_state_publisher</build_export_depend>
   <exec_depend>markerlocator</exec_depend>
   <exec_depend>rospy</exec_depend>
+  <exec_depend>rotors_control</exec_depend>
+  <exec_depend>rotors_gazebo</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>join_state_publisher</exec_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->
